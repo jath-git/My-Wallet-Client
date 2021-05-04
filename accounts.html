@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" href="images/other.png">
+</head>
+<body>
+    <header id="accountHeader">Add Account</header>
+
+    <!-- show error message when appropriate -->
+    <div id="caution">
+        <table class="unique-table">
+            <tr>
+                <th><img id="error-img" src="images/error.png" width="50px"></th>
+                <th id="caution-msg"></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- click to switch to walletConsole page -->
+    <div id="back" style="display: none;"><img src="images/go back.png" width="125px"></div>
+
+    <table id="action-table">
+        <tr>
+            <td><label id="change" class="hover-change options">CHANGE</label></td>
+            <td><label id="delete" class="hover-change options">DELETE</label></td>
+            <td><label id="cancel" class="hover-change options">CANCEL</label></td>
+        </tr>
+    </table>
+
+    <!-- get user inputs for name, code and image of account -->
+    <table id="account-table">
+        <tr>
+            <td colspan="2" id="table-instruction" class="center">Please enter information about the new account below</td>
+        </tr>
+        <tr>
+            <td><div class="right"><label>Account Name</label></div></td>
+            <td><div><input id="account-name" type="text"></div></td>
+        </tr>
+        <tr>
+            <td><div class="right"><label>Account Code</label></div></td>
+            <td><div><input id="account-code" type="text"></div></td>
+        </tr>
+        <tr>
+            <td><div class="right"><label>Account Icon (Not required)</label></div></td>
+            <td><div><input id="import" class="center" type="file" src="images/cash.png"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="center"><label id="confirm-account" class="hover-change">CONFIRM</label></td>
+        </tr>
+    </table>
+
+    <script type="module" src="JS files/accounts.js"></script>
+</body>
+</html>
