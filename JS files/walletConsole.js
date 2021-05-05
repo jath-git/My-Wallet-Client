@@ -27,8 +27,8 @@ let images = currUser.accountInformation[3];
 let currSlot;
 
 // import reccuring functions used in other js files
-import { hideError, showError } from './helper JS files/cautionTable.js';
-import { showHideInstructions } from './helper JS files/pageInstructions.js';
+import { hideError, showError } from './table helpers/cautionTable.js';
+import { showHideInstructions } from './table helpers/pageInstructions.js';
 showHideInstructions();
 
 // set intial display for html page

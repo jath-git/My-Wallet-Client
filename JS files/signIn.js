@@ -10,7 +10,7 @@ const inputs = document.querySelectorAll('input');
 let readAllUsers = JSON.parse(localStorage.getItem('allUsers'));
 
 // import showError function used in all js files
-import { showError } from './helper JS files/cautionTable.js';
+import { showError } from './table helpers/cautionTable.js';
 
 // switch to home page when clicked
 home.addEventListener('click', () => {
@@ -41,10 +41,13 @@ function verifyAccount(userName, password) {
     else {
         if (userName in readAllUsers) {
             if (password === readAllUsers[userName].password) {
+                console.log(localStorage.getItem('isSigned'))
+                localStorage.setItem('isSigned', true);
+                console.log(localStorage.getItem('isSigned'))
+                localStorage.setItem('currUser', JSON.stringify(readAllUsers[userName]));
+            
                 window.open('home.html');
                 window.close();
-                localStorage.setItem('isSigned', true);
-                localStorage.setItem('currUser', JSON.stringify(readAllUsers[userName]));
             }
             else
                 showError('Incorrect password');

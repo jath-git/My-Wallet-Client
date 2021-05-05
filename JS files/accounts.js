@@ -37,7 +37,7 @@ cancel.addEventListener('click', () => {
 })
 
 // import showError function which is used in other js files as well
-import { showError } from './helper JS files/cautionTable.js';
+import { showError } from './table helpers/cautionTable.js';
 
 const actionTable = document.getElementById('action-table');
 const accountTable = document.getElementById('account-table');

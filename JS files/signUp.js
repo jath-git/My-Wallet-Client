@@ -11,7 +11,7 @@ const inputs = document.querySelectorAll('input');
 let readAllUsers = JSON.parse(localStorage.getItem('allUsers'));
 
 // import showError function used in all js files
-import {showError} from './helper JS files/cautionTable.js';
+import {showError} from './table helpers/cautionTable.js';
 
 // if Make Account button is clicked or enter is pressed, check if inputs are valid
 makeAcc.addEventListener('click', () => validAccount(name.value, username.value, password.value, confirmPassword.value));

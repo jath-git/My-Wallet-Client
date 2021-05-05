@@ -12,7 +12,7 @@ let readCurrUser = JSON.parse(localStorage.getItem('currUser'));
 // constant used to translate the month as natural number to month as string
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 // import general functions to show/hide error message
-import { showError } from './helper JS files/cautionTable.js';
+import { showError } from './table helpers/cautionTable.js';
 
 /* if localStorage is empty (which occurs when there are no accounts 
 created from the browser), then declare necessary variables */
